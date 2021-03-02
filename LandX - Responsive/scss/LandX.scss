@@ -1,0 +1,31 @@
+@import '_variables.scss';
+@import '_header.scss';
+@import '_introduction.scss';
+@import '_awesomeness.scss';
+@import '_about_products.scss';
+@import '_features.scss';
+@import '_packages.scss';
+@import '_watch_video.scss';
+@import '_screenshots.scss';
+@import '_thousands.scss';
+@import '_help.scss';
+@import '_contacts.scss';
+@import '_footer.scss';
+
+body{
+    background: url(../images/body-bgi.jpg) no-repeat top center fixed;
+
+    &::before{
+        content:"";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(180deg, $black-tr, $black-tr);
+        position: fixed;
+        z-index: -1;
+    }
+}
+
+.container{
+    width: 1200px;
+}

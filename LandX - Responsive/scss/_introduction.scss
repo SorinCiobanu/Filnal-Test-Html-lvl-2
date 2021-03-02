@@ -1,0 +1,192 @@
+.introduction{
+
+    .container{
+        width: 100%;
+    }
+
+    .introduction-content{
+        margin: $spacer * 6 0;
+        padding: 0 $spacer;
+        width: 60%;
+
+        h1{
+            font-size: $font-size * 3;
+            color: $white;
+            padding: $spacer * 2.5 0 $spacer 0;
+
+            span{
+                font-weight: 700;
+            }
+        }
+
+        .introduction-ps{
+            align-items: center;
+            margin-bottom: $spacer * 2;
+            padding-right: $spacer * 2;
+
+            .check-icon{
+                height: $spacer * 1.5;
+                width: $spacer * 1.5;
+                margin-right: $spacer;
+                background-color: $nav-blue;
+                padding: $spacer;
+                border-radius: 10%;
+
+                i{
+                    font-size: $font-size * 2;
+                    padding: 0;
+                    color: $white;
+                }
+            }
+
+            p{
+                color: $light;
+                font-size: $font-size * 1.25;
+                margin: 0;
+            }
+        }
+    }
+
+    .introduction-form{
+        background-color: $black-tr-1;
+        padding: 0 $spacer * 2 $spacer * 2 $spacer * 2;
+        margin-top: $spacer * 7;
+        position: relative;
+        width: 35%;
+
+        &::before{
+            display: block;
+            content: "";
+            width: 18%; 
+            border-top: 1px solid $nav-blue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        legend{
+            color: $white;
+            font-size: $font-size * 1.5;
+            font-family: $Raleway;
+            font-weight: 700;
+            padding: $spacer 0;
+            margin: 0;
+        }
+
+        label{
+            margin-bottom: $spacer * 2;
+
+            input{
+                padding: $spacer / 1.5 $spacer / 1.5 $spacer / 1.5 $spacer / 1.2;
+                width: 100%;
+                background-color: $black;
+                border: 1px solid $input-b;
+                border-left: 3px solid $nav-blue;
+                border-radius: 3px;
+                outline: none;
+                color: $white;
+            }
+        }
+        
+        .form-button{
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding: $spacer / 1.5;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+
+    .introduction_media{
+        flex-direction: column !important;
+
+        .introduction-content{
+            width: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+
+            h1{
+                text-align: center;
+            }
+        }
+
+        .introduction-form{
+            width: 100%;
+            margin-bottom: $spacer * 7;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (max-width: 780px){
+
+    .introduction_media{
+        flex-direction: column;
+
+        .introduction-content{
+
+            h1{
+                font-size: $font-size * 2.7;
+            }
+
+            .introduction-ps{
+
+                p{
+                    font-size: $font-size * 1.1;
+                }
+            }
+        }
+
+        .introduction-form{
+            width: 100%;
+            margin-bottom: $spacer * 7;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (max-width: 590px){
+
+    .introduction_media{
+
+        .introduction-content{
+
+            h1{
+                font-size: $font-size * 1.8 !important;
+            }
+
+            .introduction-ps{
+
+                p{
+                    font-size: $font-size !important;
+                }
+            }
+        }
+
+        .introduction-form{
+            width: 100%;
+            margin-bottom: $spacer * 7;
+            margin-left: auto;
+            margin-right: auto;
+
+            legend{
+                font-size: $font-size * 1.3;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+
+    .tools{
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+.page_footer{
+    background-color: $light;
+    padding: $spacer * 3 0;
+    font-family: $Source-sans-pro;
+
+    .container{
+        width: 100%;
+    }
+    
+    img{
+        margin-bottom: $spacer;
+    }
+
+    p{
+        font-size: $font-size * 1.2;
+        color: $secondary;
+        margin-bottom: $spacer / 3;
+    }
+
+    .footer_ul{
+        list-style: none;
+        padding: 0;
+
+        li{
+            padding: $spacer / 3.5;
+
+            a{
+                font-size: $font-size * 1.5;
+                color: $secondary;
+
+                &:hover{
+                    color: $nav-blue;
+                    transition: 0.35s;
+                }
+            }
+        }
+    }
+}

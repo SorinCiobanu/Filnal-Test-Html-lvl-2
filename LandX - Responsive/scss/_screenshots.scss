@@ -1,0 +1,167 @@
+.screenshots{
+    background-color: $light;
+    padding: $spacer * 5 0 $spacer * 7 0;
+    font-family: $Source-sans-pro;
+    .container{
+        width: 100%;
+    }
+
+    .screenshots-header{
+       margin-bottom: $spacer * 5;
+
+        h2{
+            font-weight: 400;
+            font-size: $font-size * 3;
+            color: $dark;
+
+            &::after{
+                display: block;
+                content: "";
+                width: 7.5%;
+                border-top: 2px solid $nav-blue;
+                margin: auto;
+                margin-top: $spacer / 5;
+            }
+        }
+
+        p{
+            color: $secondary;
+            margin: 0;
+            font-weight: 400;
+            font-size: $font-size * 1.1;
+        }
+    }
+
+    .screenshots-carousel{
+
+        .carousel-indicators{
+            bottom: $spacer * (-4);
+
+            .carousel-button{
+                height: 12px;
+                width: 12px;
+                border-radius: 100%;
+                margin: 0 $spacer / 2.5;
+                background-color: $nav-blue;
+            }
+        }
+        
+        .carousel-inner{
+
+            .carousel-item{
+
+                img{
+                    width: 31%;
+                    cursor: crosshair;
+                }
+            }
+        }
+
+        .carousel-control{
+            cursor: crosshair;
+            background-color: transparent;
+
+            span{
+                display: none;
+            }
+        }
+    }
+
+    .screenshots-carousel-1{
+        display: none;
+
+        .carousel-indicators{
+            bottom: $spacer * (-4);
+
+            .carousel-button{
+                height: 12px;
+                width: 12px;
+                border-radius: 100%;
+                margin: 0 $spacer / 2.5;
+                background-color: $nav-blue;
+            }
+        }
+        
+        .carousel-inner{
+
+            .carousel-item{
+
+                img{
+                    cursor: crosshair;
+                }
+            }
+        }
+
+        .carousel-control{
+            cursor: crosshair;
+            background-color: transparent;
+
+            span{
+                display: none;
+            }
+        }
+    }
+
+    .screenshots-carousel-2{
+        display: none;
+
+        .carousel-indicators{
+            bottom: $spacer * (-4);
+
+            .carousel-button{
+                height: 12px;
+                width: 12px;
+                border-radius: 100%;
+                margin: 0 $spacer / 2.5;
+                background-color: $nav-blue;
+            }
+        }
+        
+        .carousel-inner{
+
+            .carousel-item{
+
+                img{
+                    cursor: crosshair;
+                }
+            }
+        }
+
+        .carousel-control{
+            cursor: crosshair;
+            background-color: transparent;
+
+            span{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1210px){
+
+    .screenshots-carousel{
+        display: none;
+    }
+    
+    .screenshots-carousel-1{
+        display: flex !important;
+    }
+}
+
+@media (max-width: 1010px){
+    
+    .screenshots-carousel{
+        display: none;
+    }
+    
+    .screenshots-carousel-1{
+        display: none !important;
+    }
+    
+    .screenshots-carousel-2{
+        display: flex !important;
+        width: 75%;
+        margin: auto;
+    }
+}
